@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\Task4_CalculatorApp\\",
+  "WorkspaceRootPath": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{467C70A7-D059-94E6-2554-096F053108E2}|Task3_CalculatorApp.csproj|c:\\users\\dinesh\\documents\\github\\csharptraining\\calculator app\\task4_calculatorapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{467C70A7-D059-94E6-2554-096F053108E2}|Task3_CalculatorApp.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\Task4_CalculatorApp\\Pages\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Task4_CalculatorApp\\Pages\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{467C70A7-D059-94E6-2554-096F053108E2}|Task3_CalculatorApp.csproj|c:\\users\\dinesh\\documents\\github\\csharptraining\\calculator app\\task4_calculatorapp\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{467C70A7-D059-94E6-2554-096F053108E2}|Task3_CalculatorApp.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\Task4_CalculatorApp\\Pages\\Index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Task4_CalculatorApp\\Pages\\Index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,24 +33,25 @@
               "DocumentIndex": 1,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\Task4_CalculatorApp\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Task4_CalculatorApp\\Pages\\Index.cshtml.cs",
               "ToolTip": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\Task4_CalculatorApp\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "Pages\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAANAAAAAAAAAA==",
+              "RelativeToolTip": "Task4_CalculatorApp\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T08:33:47.085Z"
+              "WhenOpened": "2026-05-14T06:31:18.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\Task4_CalculatorApp\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task4_CalculatorApp\\Pages\\Index.cshtml",
               "ToolTip": "C:\\Users\\dinesh\\Documents\\GitHub\\CSharpTraining\\Calculator App\\Task4_CalculatorApp\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEUAAAAWAAAAAAAAAA==",
+              "RelativeToolTip": "Task4_CalculatorApp\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-13T08:33:44.759Z",
+              "WhenOpened": "2026-05-14T06:31:16.806Z",
               "EditorCaption": ""
             }
           ]
