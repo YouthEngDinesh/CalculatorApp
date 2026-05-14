@@ -1,0 +1,92 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Creative Calculator";
+}
+
+<!-- Smooth entry animation for the result badge -->
+<style>
+    .pop-in {
+        animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    @@keyframes popIn {
+        0% { transform: scale(0.8); opacity: 0; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    .calc-btn {
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    .calc-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    .calc-btn:active {
+        transform: translateY(1px);
+    }
+</style>
+
+<div class="container mt-5" style="max-width: 500px;">
+    <div class="card shadow border-0 rounded-4 overflow-hidden">
+        
+        <!-- Header -->
+        <div class="card-header bg-primary text-white text-center py-3">
+            <h4 class="mb-0 fw-bold">🔢🧮🖩📱 Modern Calculator</h4>
+        </div>
+
+        <div class="card-body p-4 bg-light">
+            <form method="post">
+                
+                <!-- Input Number 1 -->
+                <div class="mb-3">
+                    <label asp-for="Number1" class="form-label fw-bold text-secondary">First Number</label>
+                    <input type="number" step="any" asp-for="Number1" class="form-control form-control-lg border-2 text-center" placeholder="0" required />
+                </div>
+
+                <!-- Interactive Middle Visual Indicator -->
+                <div class="text-center my-2 text-primary fw-bold fs-4" style="height: 30px;">
+                    @Model.OperationSymbol           <!-- This will dynamically show the selected operation symbol -->
+                </div>
+
+                <!-- Input Number 2 -->
+                <div class="mb-4">
+                    <label asp-for="Number2" class="form-label fw-bold text-secondary">Second Number</label>
+                    <input type="number" step="any" asp-for="Number2" class="form-control form-control-lg border-2 text-center" placeholder="0" required />
+                </div>
+
+                <!-- Creative Interactive Buttons Grid -->
+                <div class="row g-2 mb-3">
+                    <div class="col-3">
+                        <button type="submit" asp-page-handler="Add" class="btn btn-outline-primary btn-lg w-100 fw-bold calc-btn">＋</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" asp-page-handler="Subtract" class="btn btn-outline-primary btn-lg w-100 fw-bold calc-btn">－</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" asp-page-handler="Multiply" class="btn btn-outline-primary btn-lg w-100 fw-bold calc-btn">×</button>
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" asp-page-handler="Divide" class="btn btn-outline-primary btn-lg w-100 fw-bold calc-btn">÷</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Results Output Window -->
+            @if (Model.Result != null)
+            {
+                <div class="mt-4 p-3 bg-white border rounded-3 text-center pop-in shadow-sm">
+                    <span class="text-muted d-block small uppercase fw-bold tracking-wider">計算結果</span>
+                    <span class="fs-1 fw-extrabold text-dark">@Model.Result</span>
+                </div>
+            }
+
+            <!-- Error Notification Screen -->
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <div class="mt-4 alert alert-danger border-0 shadow-sm text-center pop-in fw-bold" role="alert">
+                    @Model.ErrorMessage
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
