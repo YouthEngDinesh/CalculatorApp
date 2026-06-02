@@ -4,6 +4,7 @@ WORKDIR /app
 COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o /app/publish
+RUN ls -la /app/publish
 
 FROM mcr.microsoft.com/dotnet/aspnet:10.0
 WORKDIR /app
