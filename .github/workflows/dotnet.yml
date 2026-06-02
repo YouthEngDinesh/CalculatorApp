@@ -29,3 +29,13 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+  # CD (Continuous Deployment) Operation
+    - name: Publish the App (Compile for Production)
+      run: dotnet publish --configuration Release --output ./publish
+
+    - name: Upload Production Files (CD Practice)
+      uses: actions/upload-artifact@v4
+      with:
+        name: production-build
+        path: ${{ github.workspace }}/Task4_CalculatorApp/publish/
