@@ -5,7 +5,7 @@ COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
-FROM ://microsoft.com
+FROM mcr.microsoft.com
 WORKDIR /app
 COPY --from=build-env /app/out .
 
