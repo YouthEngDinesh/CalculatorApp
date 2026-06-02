@@ -1,11 +1,11 @@
-FROM ://microsoft.com AS build-env
+FROM mcr.microsoft.com AS build-env
 WORKDIR /app
 
-COPY . ./
+COPY. ./
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
-FROM ://microsoft.com
+FROM mcr.microsoft.com
 WORKDIR /app
 COPY --from=build-env /app/out .
 
