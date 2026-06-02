@@ -1,10 +1,21 @@
-# Use the official .NET runtime as a base image
-FROM ://microsoft.com AS base
+# 1. Use the .NET SDK to build the application
+FROM ://microsoft.com AS build-env
 WORKDIR /app
+
+# Copy everything and restore/publish the app
+COPY . ./
+RUN dotnet restore
+RUN dotnet publish -c Release -o out
+
+# 2. Build the runtime image
+FROM ://microsoft.com
+WORKDIR /app
+COPY --from=build-env /app/out .
+
+# Expose port 8080 for Render
 EXPOSE 8080
+ENV ASPNETCORE_URLS=http://+:8080
 
-# Copy the published files from GitHub actions into the container
-COPY ./publish .
+# Run the app (Render will automatically catch this)
+ENTRYPOINT ["dotnet", "Task4_CalculatorApp.dll"]
 
-# Start the application 
-ENTRYPOINT ["dotnet", "CalculatorApp.dll"]
