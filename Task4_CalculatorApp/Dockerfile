@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com AS build-env
 WORKDIR /app
 
-COPY. ./
+COPY. .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
 
